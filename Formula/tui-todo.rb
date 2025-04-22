@@ -5,21 +5,21 @@
 class TuiTodo < Formula
   desc "Terminal-based todo application with rich features"
   homepage "https://github.com/martijnspitter/tui-todo"
-  version "0.0.17"
+  version "0.0.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.17/tui-todo_Darwin_x86_64.tar.gz"
-      sha256 "166037d53b8b7c1194a128dd83ff962c9c0fe4f23e12919327397190fd5db9d9"
+      url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.18/tui-todo_Darwin_x86_64.tar.gz"
+      sha256 "15cf935690c959f3574903f20751584e5f9cd87b1afe77229e8d9bb30ea25aa6"
 
       def install
         bin.install "tui-todo" => "todo"  # This renames the binary when installing
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.17/tui-todo_Darwin_arm64.tar.gz"
-      sha256 "aa387dcea3557a319a4e7449e337e79ec3ee22030ecf7ee1626aef53fecbc8f7"
+      url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.18/tui-todo_Darwin_arm64.tar.gz"
+      sha256 "fbafdc7ba582eb7e15f507b6bdecbf2b6d2554dd0215df66dc27a4622e92e6b8"
 
       def install
         bin.install "tui-todo" => "todo"  # This renames the binary when installing
@@ -30,8 +30,8 @@ class TuiTodo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.17/tui-todo_Linux_x86_64.tar.gz"
-        sha256 "439906db309f2406d0b11fee43dcf6e7f2709681cd2cbb0e2bc9d8cb422ba8ba"
+        url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.18/tui-todo_Linux_x86_64.tar.gz"
+        sha256 "fef0b5aadc76e502c4e74444e95de414636e50ed5d8b3e0183d07a3d6b9decab"
 
         def install
           bin.install "tui-todo" => "todo"  # This renames the binary when installing
@@ -40,8 +40,8 @@ class TuiTodo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.17/tui-todo_Linux_arm64.tar.gz"
-        sha256 "0220f0eed936a423b6b1895bdced3709e43d55ea50a4f8b29ee0c338acaa3b2d"
+        url "https://github.com/martijnspitter/tui-todo/releases/download/v0.0.18/tui-todo_Linux_arm64.tar.gz"
+        sha256 "ddfb9a0889ad06918b3bcc795a873ce0d41b156f0b3c9568ab02ef1159ae3748"
 
         def install
           bin.install "tui-todo" => "todo"  # This renames the binary when installing
